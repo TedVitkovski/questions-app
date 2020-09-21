@@ -1,12 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'; 
-// import Textarea from 'react-textarea-autosize'
+import Textarea from 'react-textarea-autosize'
 
 import { Title } from './components/styled_components'
 import { ReactComponent as TreeSvg } from './images/tree1.svg'
 // import { InputQuestion } from './components'+
 
 
+const InputQuestion = ({ className }) => {
+    return (
+        <Textarea
+            className={className}
+            maxRows={20}
+            minRows={3}
+            onHeightChange={(height) => {
+                console.log(height)
+            }}
+        />
+    )
+}
 
 const AppWrap = styled.div`
   height: 100vh;
@@ -50,7 +62,7 @@ const Underline = styled.span`
     }
   } 
 `
-const InputQuestion = styled.textarea`
+const InputMainQuestion = styled(InputQuestion)`
   margin-top: 2rem;
   font-family: Josephine;
   text-shadow: 1px 1px 18px rgba(150, 150, 150, 1);  
@@ -188,7 +200,7 @@ function App() {
    <AppWrap>
      <AppTitle>Questions</AppTitle>
      <Underline>.</Underline>
-     <InputQuestion></InputQuestion>
+     <InputMainQuestion></InputMainQuestion>
      <Button>?</Button>
      <ImgTree></ImgTree>
    </AppWrap> 
