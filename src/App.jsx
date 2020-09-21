@@ -22,6 +22,7 @@ const AppTitle = styled(Title)`
   /* border-bottom: 3px solid linear-gradient(to right, #fff, #fff, #fff; */
   font-family: 'Fira Sans';
   font-size: 1.8rem;
+  font-size: 2rem;
 `
 const Underline = styled.span`
   border-radius: 50%;
@@ -50,6 +51,7 @@ const Underline = styled.span`
   } 
 `
 const InputQuestion = styled.textarea`
+  margin-top: 2rem;
   font-family: Josephine;
   text-shadow: 1px 1px 18px rgba(150, 150, 150, 1);  
   text-shadow: 1px 1px 18px rebeccapurple;  
@@ -111,14 +113,15 @@ const InputQuestion = styled.textarea`
 const Button = styled.button`
   border: none;
   color: var(--bg-color-primary);
-  color: #50eaf5f2;
+  /* color: #50eaf5f2; */
   text-shadow: 2px 3px 35px white;
   font-size: 3rem;
   border-radius: 34px 25px 77px 37px;
   box-shadow: 2px 0.7px 13px #a35353;
-  box-shadow: 1px 2px 70px #50eaf5f2;
+  /* box-shadow: 1px 2px 70px #50eaf5f2; */
   position: absolute;
-  top: 14rem;
+  /* top: 14rem; */
+  top: 18rem;
   background-color: rebeccapurple;
   background-color: #335d99;
   background-color: #335d99d9;
@@ -131,8 +134,11 @@ const ImgTree = styled(TreeSvg)`
   /* background: rebeccapurple; */
   position: absolute;
   top: 30rem;
+  top: 35rem;
   left: 4rem;
+  left: 5rem;
   height: 18vh;
+  height: 10vh;
   width: auto;
 `
 function App() {
