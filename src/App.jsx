@@ -111,6 +111,7 @@ const InputQuestion = styled.textarea`
 const Button = styled.button`
   border: none;
   color: var(--bg-color-primary);
+  color: #50eaf5f2;
   text-shadow: 2px 3px 35px white;
   font-size: 3rem;
   border-radius: 34px 25px 77px 37px;
