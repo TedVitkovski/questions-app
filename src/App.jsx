@@ -111,7 +111,7 @@ const InputQuestion = styled.textarea`
 // }
 
 const Button = styled.button`
-transform: scale(1);
+  transform: scale(1);
   border: none;
   color: var(--bg-color-primary);
   color: #a1caea;
@@ -147,6 +147,27 @@ transform: scale(1);
     /* top: 14rem; */
     top: 18rem;
     background-color: var(--bg-color-secondary);
+  }
+  &:active {
+    transform: scale(1);
+    border: none;
+    color: var(--bg-color-primary);
+    color: #a1caea;
+    /* color: #50eaf5f2; */
+    text-shadow: 2px 3px 35px white;
+    font-size: 3rem;
+    border-radius: 34px 25px 77px 37px;
+    box-shadow: 2px 0.7px 13px #a35353;
+    /* box-shadow: 1px 2px 70px #50eaf5f2; */
+    position: absolute;
+    /* top: 14rem; */
+    top: 18rem;
+    background-color: rebeccapurple;
+    background-color: #335d99;
+    background-color: #335d99d9;
+    height: 4rem;
+    width: 40vw;
+    transition: all, 0.2s;
   }
 `
 const ImgTree = styled(TreeSvg)`
