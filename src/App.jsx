@@ -130,18 +130,19 @@ const Button = styled.button`
   /* color: #50eaf5f2; */
   text-shadow: 2px 3px 35px white;
   font-size: 3rem;
+  font-size: 2rem;
   border-radius: 34px 25px 77px 37px;
   box-shadow: 2px 0.7px 13px #a35353;
   /* box-shadow: 1px 2px 70px #50eaf5f2; */
   position: absolute;
   /* top: 14rem; */
   top: 18rem;
-  top: 15rem;
+  top: 20rem;
   background-color: rebeccapurple;
   background-color: #335d99;
   background-color: #335d99d9;
   height: 4rem;
-  height: 3rem;
+  height: 2.5rem;
   width: 40vw;
   width: 30vw;
   transition: all, 0.2s;
@@ -155,12 +156,14 @@ const Button = styled.button`
     color: white;
     text-shadow: 2px 3px 35px white;
     font-size: 2.8rem;
+    font-size: 1.4rem;
     border-radius: 34px 25px 77px 37px;
     box-shadow: 2px 0.7px 33px #a35353;
     /* box-shadow: 1px 2px 70px #50eaf5f2; */
     position: absolute;
     /* top: 14rem; */
     top: 18rem;
+    top: 20rem;
     background-color: var(--bg-color-secondary);
   }
   &:active {
@@ -171,17 +174,19 @@ const Button = styled.button`
     /* color: #50eaf5f2; */
     text-shadow: 2px 3px 35px white;
     font-size: 3rem;
+    font-size: 1.8rem;
     border-radius: 34px 25px 77px 37px;
-    box-shadow: 2px 0.7px 13px #a35353;jjjj
+    box-shadow: 2px 0.7px 13px #a35353;
     /* box-shadow: 1px 2px 70px #50eaf5f2; */
     position: absolute;
     /* top: 14rem; */
     top: 18rem;
+    top: 20rem;
     background-color: rebeccapurple;
     background-color: #335d99;
     background-color: #335d99d9;
-    height: 4rem;
-    width: 40vw;
+    /* height: 4rem;
+    width: 40vw; */
     transition: all, 0.2s;
   }
 `
