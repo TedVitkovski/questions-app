@@ -17,7 +17,7 @@ const InputQuestion = ({ className }) => {
 }
 
 const StyledInputQuestion = styled(InputQuestion)`
-    overflow-y: hidden;
+    /* overflow-y: hidden;
     font-size: 1.2rem;
     box-shadow: inset 0 0 0 5px #fff;
     border: none;
@@ -41,7 +41,7 @@ const StyledInputQuestion = styled(InputQuestion)`
         outline: none;
         background-color: white;
         box-shadow: inset 0 0 0 5px #eee;
-    }
+    } */
 
 `
 

@@ -12,6 +12,7 @@
 
 :root {
     --font-color-primary: #f9f9f9; 
+    --bg-color-primary: #71b5ec; 
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
   font-family: 'Fira Sans';
-  background-color: #71b5ec;
+  background-color: var(--bg-color-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 69.5%;
