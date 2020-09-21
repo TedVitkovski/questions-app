@@ -11,8 +11,8 @@ const InputQuestion = ({ className }) => {
     return (
         <Textarea
             className={className}
-            maxRows={20}
-            minRows={3}
+            maxRows={5}
+            minRows={2}
             onHeightChange={(height) => {
                 console.log(height)
             }}
@@ -136,11 +136,14 @@ const Button = styled.button`
   position: absolute;
   /* top: 14rem; */
   top: 18rem;
+  top: 15rem;
   background-color: rebeccapurple;
   background-color: #335d99;
   background-color: #335d99d9;
   height: 4rem;
+  height: 3rem;
   width: 40vw;
+  width: 30vw;
   transition: all, 0.2s;
   &:focus {
     transform: scale(0.95);
@@ -169,7 +172,7 @@ const Button = styled.button`
     text-shadow: 2px 3px 35px white;
     font-size: 3rem;
     border-radius: 34px 25px 77px 37px;
-    box-shadow: 2px 0.7px 13px #a35353;
+    box-shadow: 2px 0.7px 13px #a35353;jjjj
     /* box-shadow: 1px 2px 70px #50eaf5f2; */
     position: absolute;
     /* top: 14rem; */
