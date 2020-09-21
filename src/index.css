@@ -13,6 +13,7 @@
 :root {
     --font-color-primary: #f9f9f9; 
     --bg-color-primary: #71b5ec; 
+    --bg-color-secondary: #274979d9; 
 }
 
 body {

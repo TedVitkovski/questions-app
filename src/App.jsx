@@ -55,7 +55,7 @@ const InputQuestion = styled.textarea`
   font-family: Josephine;
   text-shadow: 1px 1px 18px rgba(150, 150, 150, 1);  
   text-shadow: 1px 1px 18px rebeccapurple;  
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.2rem;
   box-shadow: inset 0 0 0 5px #fff;
   border: none;
@@ -111,8 +111,10 @@ const InputQuestion = styled.textarea`
 // }
 
 const Button = styled.button`
+transform: scale(1);
   border: none;
   color: var(--bg-color-primary);
+  color: #a1caea;
   /* color: #50eaf5f2; */
   text-shadow: 2px 3px 35px white;
   font-size: 3rem;
@@ -127,6 +129,25 @@ const Button = styled.button`
   background-color: #335d99d9;
   height: 4rem;
   width: 40vw;
+  transition: all, 0.2s;
+  &:focus {
+    transform: scale(0.95);
+    outline: none;
+    border: none;
+    color: #7397cad9;
+    /* color: #052149d9; */
+    color: #50eaf5f2;
+    color: white;
+    text-shadow: 2px 3px 35px white;
+    font-size: 2.8rem;
+    border-radius: 34px 25px 77px 37px;
+    box-shadow: 2px 0.7px 33px #a35353;
+    /* box-shadow: 1px 2px 70px #50eaf5f2; */
+    position: absolute;
+    /* top: 14rem; */
+    top: 18rem;
+    background-color: var(--bg-color-secondary);
+  }
 `
 const ImgTree = styled(TreeSvg)`
   border-radius: 40px 20px 60px 80px;
