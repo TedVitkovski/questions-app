@@ -5,10 +5,21 @@
   box-sizing: border-box; 
 }
 
+@font-face { 
+  font-family: 'Fira Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+}
+
+:root {
+    --font-color-primary: #f9f9f9; 
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: 'Fira Sans';
+  background-color: #71b5ec;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 69.5%;

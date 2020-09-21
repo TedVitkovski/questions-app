@@ -1,11 +1,29 @@
 import React from 'react';
-import "./App.css";
+import styled from 'styled-components';
+
+import { Title } from './components/styled_components'
+import { InputQuestion } from './components'
+
+const AppWrap = styled.div`
+  height: 100vh;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+`
+
+const AppTitle = styled(Title)`
+  font-family: 'Fira Sans';
+  font-size: 1.8rem;
+`
 
 function App() {
   return (
-   <div className="questions">
-     <h1>Questions</h1>
-   </div> 
+   <AppWrap>
+     <AppTitle>Questions</AppTitle>
+     <InputQuestion></InputQuestion>
+   </AppWrap> 
   );
 }
 
