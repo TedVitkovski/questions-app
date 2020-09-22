@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'; 
-import Textarea from 'react-textarea-autosize'
+import Textarea from 'react-textarea-autosize';
 
 import { Title } from './components/styled_components'
 import { ReactComponent as TreeSvg } from './images/tree1.svg'
@@ -64,10 +64,10 @@ const Underline = styled.span`
 `
 const InputMainQuestion = styled(InputQuestion)`
   margin-top: 2rem;
-  font-family: Josephine;
+  font-family: 'Josefin Sans', sans-serif;
   text-shadow: 1px 1px 18px rgba(150, 150, 150, 1);  
   text-shadow: 1px 1px 18px rebeccapurple;  
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1.2rem;
   box-shadow: inset 0 0 0 5px #fff;
   border: none;
@@ -78,7 +78,7 @@ const InputMainQuestion = styled(InputQuestion)`
   width: 80%;
   min-width: 230px;
   /* margin-top: 2rem; */
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 1.2rem;
   background-color: #eee;
   color: #09b781;
   color: #1cd2ab;

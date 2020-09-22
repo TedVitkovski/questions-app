@@ -6,8 +6,13 @@
 }
 
 @font-face { 
+  font-family: 'Josefin Sans';
+  src: local('Josefin Sans'), url(fonts/JosefinSans-Light.ttf) format('ttf');
+}
+
+@font-face { 
   font-family: 'Fira Sans';
-  src: url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+  src: local('Fira Sans'), url(fonts/FiraSans-Light.ttf) format('ttf');
 }
 
 :root {
