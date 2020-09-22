@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'; 
 import Textarea from 'react-textarea-autosize';
 
+
 import { Title } from './components/styled_components'
 import { ReactComponent as TreeSvg } from './images/tree1.svg'
 // import { InputQuestion } from './components'+
@@ -64,6 +65,7 @@ const Underline = styled.span`
   } 
 `
 const InputMainQuestion = styled(InputQuestion)`
+  background: url('../images/tree1.svg') no-repeat;
   line-height: 1.5rem;
   margin-top: 2rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -223,6 +225,40 @@ const ImgTreeBig = styled(TreeSvg)`
   height: 100%;
   width: auto;
 `
+const DivOnChange = styled.span`
+  opacity: 0.3;
+  border-radius: 50%;
+  font-size: 20rem;
+  margin: 1rem;
+  /* color: rgba(255, 255, 255, 0.3); */
+  color: rgba(255, 255, 255, 0);
+  background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary));
+  height: 1rem;
+  animation: smile 0.2s ease infinite;
+  @keyframes smile {
+    0% { 
+      background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary));
+      transform: rotate(0deg);
+    }
+    25% {
+      background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary), white, var(--bg-color-primary)); 
+      transform: rotate(360deg);
+    }
+    50% { 
+      background: linear-gradient(to right, white, var(--bg-color-primary), white);
+      transform: rotate(720deg);
+    }
+    75% { 
+      background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary), white, var(--bg-color-primary)); 
+      transform: rotate(1080deg);
+    }
+    100% {
+      background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary)); 
+      transform: rotate(1440deg);
+    }
+  } 
+  
+` 
 function App() {
   return (
    <AppWrap>
@@ -232,6 +268,7 @@ function App() {
      <Button>?</Button>
      <ImgTree></ImgTree>
      <ImgTreeBig></ImgTreeBig>
+     <DivOnChange>.</DivOnChange>
    </AppWrap> 
   );
 }
