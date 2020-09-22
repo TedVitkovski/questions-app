@@ -21,6 +21,7 @@ const InputQuestion = ({ className }) => {
 }
 
 const AppWrap = styled.div`
+  overflow: hidden;
   height: 100vh;
   padding-top: 3rem;
   display: flex;
@@ -205,18 +206,17 @@ const ImgTree = styled(TreeSvg)`
   height: 10vh;
   width: auto;
 `
-const ImgTree1 = styled(TreeSvg)`
-  overflow: hidden;
-  top: -1.5rem;
+const ImgTreeBig = styled(TreeSvg)`
   z-index: -1;
-  opacity: 0.3;
+  right: 2rem;
+  opacity: 0.2;
   /* fill: #ff000052; */
   border-radius: 40px 20px 60px 80px;
   /* background: radial-gradient(rebeccapurple, var()) */
   background: rgba(255, 255, 255, .2);
   position: absolute;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   width: auto;
 `
 function App() {
@@ -227,7 +227,7 @@ function App() {
      <InputMainQuestion></InputMainQuestion>
      <Button>?</Button>
      <ImgTree></ImgTree>
-     <ImgTree1></ImgTree1>
+     <ImgTreeBig></ImgTreeBig>
    </AppWrap> 
   );
 }
