@@ -234,7 +234,7 @@ const DivOnChange = styled.span`
   color: rgba(255, 255, 255, 0);
   background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary));
   height: 1rem;
-  animation: smile 0.2s ease infinite;
+  animation: smile 0.2s ease infinite, move 4s ease-in-out alternate infinite;
   @keyframes smile {
     0% { 
       background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary));
@@ -257,7 +257,14 @@ const DivOnChange = styled.span`
       transform: rotate(1440deg);
     }
   } 
-  
+  @keyframes move {
+    0% {
+      transform: translateX(0rem) translateY(0rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(5rem) translateY(6rem) rotate(0deg);
+    }
+  }
 ` 
 function App() {
   return (
