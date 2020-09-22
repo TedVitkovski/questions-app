@@ -153,7 +153,7 @@ const Button = styled.button`
     width: 40vw;
     width: 30vw;
     transition: all, 0.2s;
-  &:focus {
+  &:active {
     transform: scale(1.25);
     outline: none;
     border: none;
@@ -161,10 +161,11 @@ const Button = styled.button`
     /* color: #052149d9; */
     color: #50eaf5f2;
     color: white;
+    color: rgba(255, 255, 255, 0.7);
     text-shadow: 2px 3px 35px white;
     font-size: 2.8rem;
     font-size: 1.4rem;
-    font-size: 200%;
+    font-size: 230%;
     border-radius: 34px 25px 77px 37px;
     box-shadow: 2px 0.7px 33px #a35353;
     box-shadow: 1px 2px 70px #50eaf5f2;
@@ -174,12 +175,15 @@ const Button = styled.button`
     top: 20.8rem;
     background-color: var(--bg-color-secondary);
   }
-  &:active {
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  /* &:active {
     transform: scale(1.3);
     border: none;
     color: var(--bg-color-primary);
     color: #a1caea;
-    /* color: #50eaf5f2; */
     text-shadow: 2px 3px 35px white;
     font-size: 3rem;
     font-size: 1.8rem;
@@ -188,16 +192,13 @@ const Button = styled.button`
     box-shadow: 2px 0.7px 13px #a35353;
     box-shadow: 1px 2px 70px #50eaf5f2;
     position: absolute;
-    /* top: 14rem; */
     top: 18rem;
     top: 21rem;
     background-color: rebeccapurple;
     background-color: #335d99;
     background-color: #335d99d9;
-    /* height: 4rem;
-    width: 40vw; */
     transition: all, 0.2s, ease-in;
-  }
+  } */
 `
 const ImgTree = styled(TreeSvg)`
   border-radius: 40px 20px 60px 80px;
