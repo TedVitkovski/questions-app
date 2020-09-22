@@ -206,7 +206,8 @@ const ImgTree = styled(TreeSvg)`
   width: auto;
 `
 const ImgTree1 = styled(TreeSvg)`
-  top: -1rem;
+  overflow: hidden;
+  top: -1.5rem;
   z-index: -1;
   opacity: 0.3;
   /* fill: #ff000052; */
