@@ -64,6 +64,7 @@ const Underline = styled.span`
   } 
 `
 const InputMainQuestion = styled(InputQuestion)`
+  line-height: 1.5rem;
   margin-top: 2rem;
   font-family: 'Josefin Sans', sans-serif;
   text-shadow: 1px 1px 18px rgba(150, 150, 150, 1);  
@@ -126,29 +127,30 @@ const InputMainQuestion = styled(InputQuestion)`
 // }
 
 const Button = styled.button`
-  transform: scale(1.3);
-  border: none;
-  color: var(--bg-color-primary);
-  color: #a1caea;
-  /* color: #50eaf5f2; */
-  text-shadow: 2px 3px 35px white;
-  font-size: 3rem;
-  font-size: 2rem;
-  border-radius: 34px 25px 77px 37px;
-  box-shadow: 2px 0.7px 13px #a35353;
-  box-shadow: 1px 2px 70px #50eaf5f2;
-  position: absolute;
-  /* top: 14rem; */
-  top: 18rem;
-  top: 21rem;
-  background-color: rebeccapurple;
-  background-color: #335d99;
-  background-color: #335d99d9;
-  height: 4rem;
-  height: 2.5rem;
-  width: 40vw;
-  width: 30vw;
-  transition: all, 0.2s;
+    transform: scale(1.3);
+    border: none;
+    color: var(--bg-color-primary);
+    color: #a1caea;
+    /* color: #50eaf5f2; */
+    text-shadow: 2px 3px 35px white;
+    font-size: 3rem;
+    font-size: 1.8rem;
+    font-size: 265%;
+    border-radius: 34px 25px 77px 37px;
+    box-shadow: 2px 0.7px 13px #a35353;
+    box-shadow: 1px 2px 70px #50eaf5f2;
+    position: absolute;
+    /* top: 14rem; */
+    top: 18rem;
+    top: 21rem;
+    background-color: rebeccapurple;
+    background-color: #335d99;
+    background-color: #335d99d9;
+    height: 4rem;
+    height: 2.5rem;
+    width: 40vw;
+    width: 30vw;
+    transition: all, 0.2s;
   &:focus {
     transform: scale(1.25);
     outline: none;
@@ -160,6 +162,7 @@ const Button = styled.button`
     text-shadow: 2px 3px 35px white;
     font-size: 2.8rem;
     font-size: 1.4rem;
+    font-size: 200%;
     border-radius: 34px 25px 77px 37px;
     box-shadow: 2px 0.7px 33px #a35353;
     box-shadow: 1px 2px 70px #50eaf5f2;
@@ -178,6 +181,7 @@ const Button = styled.button`
     text-shadow: 2px 3px 35px white;
     font-size: 3rem;
     font-size: 1.8rem;
+    font-size: 265%;
     border-radius: 34px 25px 77px 37px;
     box-shadow: 2px 0.7px 13px #a35353;
     box-shadow: 1px 2px 70px #50eaf5f2;
