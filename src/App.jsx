@@ -205,6 +205,19 @@ const ImgTree = styled(TreeSvg)`
   height: 10vh;
   width: auto;
 `
+const ImgTree1 = styled(TreeSvg)`
+  top: -1rem;
+  z-index: -1;
+  opacity: 0.3;
+  /* fill: #ff000052; */
+  border-radius: 40px 20px 60px 80px;
+  /* background: radial-gradient(rebeccapurple, var()) */
+  background: rgba(255, 255, 255, .2);
+  position: absolute;
+  margin: 0 auto;
+  height: 100vh;
+  width: auto;
+`
 function App() {
   return (
    <AppWrap>
@@ -213,6 +226,7 @@ function App() {
      <InputMainQuestion></InputMainQuestion>
      <Button>?</Button>
      <ImgTree></ImgTree>
+     <ImgTree1></ImgTree1>
    </AppWrap> 
   );
 }
