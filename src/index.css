@@ -9,11 +9,67 @@
   font-family: 'Josefin Sans';
   src: local('Josefin Sans'), url(fonts/JosefinSans-Light.ttf) format('ttf');
 }
+/*Following doesn't work, used link from GFonts in Helmet!*/
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
 
-@font-face { 
+licorice:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Shizuru&display=swap" rel="stylesheet">
+
+vujahday Script:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+
+comforter Brush:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Shizuru&display=swap" rel="stylesheet">
+
+
+Shizuru:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Shizuru&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Comforter Brush', cursive;
+font-family: 'Shizuru', cursive;
+
+Indie Flower:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Indie+Flower&family=Shizuru&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Comforter Brush', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Shizuru', cursive;
+
+*/
+/* @font-face {
+  font-family: 'Quicksand';
+  src: local('Quicksand'), url(https://fonts.googleapis.com/css2?family=Shizuru&family=Vujahday+Script&display=swap);
+}
+@font-face {
+  font-family: 'Shizuru';
+  src: local('Shizuru'), url(fonts/Shizuru-Regular.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Vujahday Script';
+  src: local('Vujahday Script'), url(fonts/VujahdayScript-Regular.ttf) format('ttf');
+} */
+
+/* @font-face { 
   font-family: 'Fira Sans';
   src: local('Fira Sans'), url(fonts/FiraSans-Light.ttf) format('ttf');
-}
+} */
 
 :root {
     --font-color-primary: #f9f9f9; 

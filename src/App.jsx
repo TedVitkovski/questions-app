@@ -34,9 +34,10 @@ const AppWrap = styled.div`
 const AppTitle = styled(Title)`
   /* padding-bottom: 1rem; */
   /* border-bottom: 3px solid linear-gradient(to right, #fff, #fff, #fff; */
-  font-family: 'Fira Sans';
+  font-family: 'Shizuru';
   font-size: 1.8rem;
-  font-size: 2rem;
+  font-size: 4rem;
+  /* font-weight: 400; */
 `
 const Underline = styled.span`
   border-radius: 50%;
@@ -129,6 +130,9 @@ const InputMainQuestion = styled(InputQuestion)`
 // }
 
 const Button = styled.button`
+    z-index: 3;
+    padding-bottom: 8vh!important;
+    font-family: "Shizuru";
     transform: scale(1.3);
     border: none;
     color: var(--bg-color-primary);
@@ -138,7 +142,7 @@ const Button = styled.button`
     font-size: 3rem;
     font-size: 1.8rem;
     font-size: 265%;
-    border-radius: 34px 25px 77px 37px;
+    /* border-radius: 34px 25px 77px 37px; */
     box-shadow: 2px 0.7px 13px #a35353;
     box-shadow: 1px 2px 70px #50eaf5f2;
     position: absolute;
@@ -235,7 +239,7 @@ const DivOnChange = styled.span`
   color: rgba(255, 255, 255, 0);
   background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary));
   height: 1rem;
-  animation: smile 0.2s ease infinite, move 4s ease-in-out alternate infinite;
+  animation: smile 0.2s ease infinite, move${props => props.moveAnim} 4s ease-in-out alternate infinite;
   @keyframes smile {
     0% { 
       background: linear-gradient(to right, var(--bg-color-primary), white, var(--bg-color-primary));
@@ -258,7 +262,15 @@ const DivOnChange = styled.span`
       transform: rotate(1440deg);
     }
   } 
-  @keyframes move {
+  @keyframes move0 {
+    0% {
+      transform: translateX(0rem) translateY(0rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(1rem) translateY(4rem) rotate(0deg);
+    }
+  }
+  @keyframes move1 {
     0% {
       transform: translateX(0rem) translateY(0rem) rotate(0deg);
     }
@@ -266,17 +278,83 @@ const DivOnChange = styled.span`
       transform: translateX(5rem) translateY(6rem) rotate(0deg);
     }
   }
+  @keyframes move2 {
+    0% {
+      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(6rem) translateY(-3rem) rotate(0deg);
+    }
+  }
+  @keyframes move3 {
+    0% {
+      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-4rem) translateY(-3rem) rotate(0deg);
+    }
+  }
+  @keyframes move4 {
+    0% {
+      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(1rem) translateY(-3rem) rotate(0deg);
+    }
+  }
+  @keyframes move5 {
+    0% {
+      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(10rem) translateY(-3rem) rotate(0deg);
+    }
+  }
+  @keyframes move6 {
+    0% {
+      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(6rem) translateY(-3rem) rotate(170deg);
+    }
+  }
+  @keyframes move7 {
+    0% {
+      transform: translateX(-2rem) translateY(-45rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(8rem) translateY(56rem) rotate(0deg);
+    }
+  }
+  @keyframes move8 {
+    0% {
+      transform: translateX(-2rem) translateY(-13rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(8rem) translateY(-3rem) rotate(0deg);
+    }
+  }
+  @keyframes move9 {
+    0% {
+      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+    }
+    100% {
+      transform: translateX(8rem) translateY(-3rem) rotate(0deg);
+    }
+  }
 ` 
 function App() {
   return (
    <AppWrap>
      <AppTitle>Questions</AppTitle>
-     <Underline>.</Underline>
+     {/* <Underline>.</Underline> */}
      <InputMainQuestion></InputMainQuestion>
-     <Button>?</Button>
+     <Button>???</Button>
      <ImgTree></ImgTree>
      <ImgTreeBig></ImgTreeBig>
-     <DivOnChange>.</DivOnChange>
+     {new Array(7).fill().map((_, i) => ( 
+      <DivOnChange moveAnim={i}>.</DivOnChange>
+      ))}
    </AppWrap> 
   );
 }
