@@ -264,81 +264,101 @@ const DivOnChange = styled.span`
   } 
   @keyframes move0 {
     0% {
-      transform: translateX(0rem) translateY(0rem) rotate(0deg);
+      opacity: 0.8;
+      transform: translateX(7rem) translateY(3rem) rotate(7deg);
     }
     100% {
-      transform: translateX(1rem) translateY(4rem) rotate(0deg);
+      transform: translateX(1rem) translateY(14rem) rotate(130deg);
+      opacity: 0;
     }
   }
   @keyframes move1 {
     0% {
-      transform: translateX(0rem) translateY(0rem) rotate(0deg);
+      opacity: 0;
+      transform: translateX(-3rem) translateY(2rem) rotate(15deg);
     }
     100% {
+      opacity: 0.3;
       transform: translateX(5rem) translateY(6rem) rotate(0deg);
     }
   }
   @keyframes move2 {
     0% {
+      opacity: 0.7;
       transform: translateX(-2rem) translateY(6rem) rotate(0deg);
     }
     100% {
+      opacity: 0.2;
       transform: translateX(6rem) translateY(-3rem) rotate(0deg);
     }
   }
   @keyframes move3 {
     0% {
+      opacity: 0.8;
       transform: translateX(-2rem) translateY(6rem) rotate(0deg);
     }
     100% {
+      opacity: 0.3;
       transform: translateX(-4rem) translateY(-3rem) rotate(0deg);
     }
   }
   @keyframes move4 {
     0% {
-      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+      opacity: 0;
+      transform: translateX(-12rem) translateY(6rem) rotate(-138deg);
     }
     100% {
-      transform: translateX(1rem) translateY(-3rem) rotate(0deg);
+      opacity: 0.1;
+      transform: translateX(1rem) translateY(-2rem) rotate(80deg);
     }
   }
   @keyframes move5 {
     0% {
-      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+      opacity: 0.8;
+      transform: translateX(-2rem) translateY(11rem) rotate(0deg);
     }
     100% {
+      opacity: 0.3;
       transform: translateX(10rem) translateY(-3rem) rotate(0deg);
     }
   }
   @keyframes move6 {
     0% {
-      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+      transform: translateX(-6rem) translateY(4rem) rotate(-20deg);
+      opacity: 0;
     }
     100% {
+      opacity: 0.1;
       transform: translateX(6rem) translateY(-3rem) rotate(170deg);
     }
   }
   @keyframes move7 {
     0% {
+      opacity: 0.1;
       transform: translateX(-2rem) translateY(-45rem) rotate(0deg);
     }
     100% {
-      transform: translateX(8rem) translateY(56rem) rotate(0deg);
+      opacity: 0.2;
+      transform: translateX(8rem) translateY(26rem) rotate(0deg);
     }
   }
   @keyframes move8 {
     0% {
+      opacity: 0.3;
       transform: translateX(-2rem) translateY(-13rem) rotate(0deg);
     }
     100% {
+      opacity: 0.2;
       transform: translateX(8rem) translateY(-3rem) rotate(0deg);
     }
   }
   @keyframes move9 {
     0% {
-      transform: translateX(-2rem) translateY(6rem) rotate(0deg);
+      opacity: 0.8;
+      transform: translateX(4rem) translateY(-2rem) rotate(270deg);
     }
     100% {
+      opacity: 0.2;
       transform: translateX(8rem) translateY(-3rem) rotate(0deg);
     }
   }
@@ -352,7 +372,7 @@ function App() {
      <Button>???</Button>
      <ImgTree></ImgTree>
      <ImgTreeBig></ImgTreeBig>
-     {new Array(7).fill().map((_, i) => ( 
+     {new Array(5).fill().map((_, i) => ( 
       <DivOnChange moveAnim={i}>.</DivOnChange>
       ))}
    </AppWrap> 
